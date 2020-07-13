@@ -1,0 +1,56 @@
+
+
+Email text containing data on his interested states.
+Subject line: "COVID-19 daily report: <State name>"
+Excel sheet attachment containing report of entire country state-wise.
+News from top news websites such as (Times of India, The Hindu or similar). 
+Only headline is sufficient. Followed by link for further reading.
+
+Graph??
+
+BRAINSTORM:
+--------------------------------
+
+1. Collect data.
+	How?
+	Via: Web API
+	API: https://api.covid19india.org/state_district_wise.json
+
+	Get data automatically.
+	How?
+	
+	Parse it and store it in certain data structure.
+	
+2. Mail service.
+	How to?
+	https://docs.python.org/3/library/email.examples.html
+	https://realpython.com/python-send-email/
+	
+	
+3. Making report.
+	Format?
+	1. Text format. (May be as HTML on mail)
+	2. XLS/XLX. State wise report
+		Library available? https://www.python-excel.org/
+	
+	
+4. Web scraping.
+	
+	https://realpython.com/python-web-scraping-practical-introduction/
+	Downloading the resources
+	Extracting information. (COVID-19)
+	
+5. Testing.
+
+6. Automated builds, deployment.
+
+---------------------
+
+
+Breaking into modules and defining interfaces.
+
+
+
+----------------------------------------------------
+
+

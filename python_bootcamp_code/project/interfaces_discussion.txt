@@ -1,0 +1,32 @@
+
+IDENTIFYING INTERFACES:
+--------------------------------------
+Discussion on defining interfaces
+
+1. Collect data from API.
+
+		def get_processed_data( data )
+		
+2. Mail service.
+	def send_mail( <mail format> )
+	
+3. Making report.
+
+	def process_api_data():
+		get_processed_data
+	-----
+	def process_news():
+		get_news()
+	
+	def aggregate_data():
+		api_data = process_api_data(data)
+		news_data =	process_news()
+		
+		send_mail(api_data + news_data)
+	
+	
+4. Web scraping.
+	def get_news()
+	
+	
+

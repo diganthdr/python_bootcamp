@@ -17,9 +17,13 @@ input_map = {
 }
 
 #Globals
-template = "input_policy_reminder_template.docx"
-TEMP_REPLACED_DOC = "_temp.docx"
-PDF_FILE_NAME = "output_policy_reminder.pdf"
+import sys
+import os
+
+BASE_DIR = os.getcwd()
+template = os.path.join( BASE_DIR, "input_policy_test_template.docx")
+TEMP_REPLACED_DOC = os.path.join(BASE_DIR, "_temp.docx")
+PDF_FILE_NAME = os.path.join( BASE_DIR, "output_policy_reminder.pdf")
 
 def replace_words_in_document(input_map, template):
     document = Document(template)
@@ -32,7 +36,7 @@ def replace_words_in_document(input_map, template):
                 if key in text: 
                     text=text.replace(key,val)
                     in_text.text = text
-    document.save('new.docx')
+    document.save(TEMP_REPLACED_DOC)
     return True #for now
 
 
